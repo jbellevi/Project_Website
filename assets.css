@@ -1,0 +1,113 @@
+: root
+{
+	--greyishTurquoise: #9BD8EA;
+	--darkGrey: #BCD9E8;
+	--lightGrey: #CEE1EB;
+	--greyishPink:#EDEEE9;
+	--palePink:#FDF2F0;
+	--myBeige:#FEF9F5;
+	--beigeGreen:#F2FEFE;
+	--lightGreen:#CDF8FF;
+	--turquoiseA:#ABECFF;
+	--turquoiseB:#99E6F9;
+	--turquoiseC:#98E1F4;
+
+	--darkerGrey:#7CACCA;
+}
+
+#my_name
+{
+	font-family: Optima, Calibri Light, sans-serif;
+	
+
+	font-size:7rem;
+	text-align:center;
+	line-height:1.25;
+}
+
+.background
+{
+	//background: linear-gradient(0deg, var(--lightGrey), var(--greyishPink), var(--palePink), var(--myBeige), var(--beigeGreen),var(--lightGreen), var(--turquoiseA));
+	background-image: /*url("background_design_6.png"), */linear-gradient(10deg, #9BD8EA, #BCD9E8, #CEE1EB, #EDEEE9, #FDF2F0, #FEF9F5, #F2FEFE,#CDF8FF, #ABECFF, #99E6F9, #98E1F4);
+
+	background-repeat:no-repeat;
+	min-height:/* 20%,*/ 100%;
+	min-width: /*20%,*/ 100%;
+	background-size: cover;
+	background-attachment:fixed;
+  
+
+
+}
+
+.reg_text
+{
+	font-family: Century Gothic, PT Sans Pro, Verdana, cursive, sans-serif;
+	text-align:center;
+	font-size:1.75rem;
+	color:black;
+	line-height: 1.25;
+}
+
+.title_block
+{
+	min-height:33%;
+	min-width:50%;
+	border: white solid 2px;
+	//background-color: rgba(0,0,0,0.8);
+	background: linear-gradient(to right, black, #7CACCA);
+	position:center relative;
+	margin-top: 12.5%;
+	padding:1.5rem;
+	display:inline-block;
+	-webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.subtitles
+{
+	display:block;
+}
+
+.subsection_bars
+{
+
+}
+
+#table_of_contents
+{
+	background: linear-gradient(-110deg, black, #7CACCA);
+
+	width: 100%;
+	height:75px;
+	position:fixed;
+	z-index:10;
+
+	border:white solid 2px;
+}
+
+#about_me
+{
+
+}
+
+#project_gallery
+{
+
+}
+
+#contact_me
+{
+
+}
+
+
+html
+{
+	height:100%;
+}
+
+body
+{
+	height:100%;
+}

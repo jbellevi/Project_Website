@@ -12,6 +12,8 @@
 
     <!--Adding my CSS file-->
     <link rel = "stylesheet" type = "text/css" href = "assets.css">
+    <link rel = "stylesheet" type = "text/css" href = "media.css">
+
 
     <title> Julie Belleville, Engineering Student </title>
   </head>
@@ -22,51 +24,154 @@
   <body class = "background">
 
 <!--Table of Content Bar-->
-  <div class = "subtitles" id = "contents">
-    <div class = "row">
-      <div class = "col-sm-2">
-        <p class = "reg_text content_text" id = "welcome_tag"> Welcome </p>
-      </div>
-      <div class = "col-sm-2"></div>
-      <div class = "col-sm-2">
-        <p class = "reg_text content_text"> ABOUT </p>
-      </div>
-      <div class = "col-sm-2">
-        <p class = "reg_text content_text"> PROJECTS </p>
-      </div>
-      <div class = "col-sm-2">
-        <p class = "reg_text content_text"> RESUME </p>
-      </div>
-      <div class = "col-sm-2">
-        <p class = "reg_text content_text"> CONTACT </p>
-      </div>
-  </div>
+  <div id = "title_bookmark"></div>
+  <div id = "contents">
+    <div class = "container-fluid">
+      <div class = "row">
+        <div class = "col-sm-4">
+          <!--dropdown bar stuff-->
+          <a href = "#title_bookmark" class = "smoothscroll">
+           <p class = "reg_text" id = "welcome_tag"> HelloWorld </p>
+         </a>
+         <div class = "dropdown_box" id = "nav_dropdown">
+           <a href = "#about_me_page" class = "smoothscroll">
+             <p class = "reg_text dropdown_content_text"> ABOUT </p>
+           </a>
+           <a href = "#project_gallery_page" class = "smoothscroll">
+             <p class = "reg_text dropdown_content_text"> PROJECTS </p>
+           </a>
+           <a href = "#resume_page"  class = "smoothscroll">
+              <p class = "reg_text dropdown_content_text"> RESUME </p>
+           </a>
+            <a href = "#contact_me_page"  class = "smoothscroll">
+              <p class = "reg_text dropdown_content_text"> CONTACT </p>
+            </a>
+            </div>
+        </div>
+        <!--<div class = "col-sm-1"></div>-->
+          <div class = "col-sm-2">
+            <a href = "#about_me_page" class = "smoothscroll">
+              <p class = "reg_text content_text"> ABOUT </p>
+            </a>
+          </div>
+          <div class = "col-sm-2">
+            <a href = "#project_gallery_page" class = "smoothscroll">
+             <p class = "reg_text content_text"> PROJECTS </p>
+           </a>
+          </div>
+          <div class = "col-sm-2">
+            <a href = "#resume_page"  class = "smoothscroll">
+              <p class = "reg_text content_text"> RESUME </p>
+            </a>
+          </div>
+          <div class = "col-sm-2">
+            <a href = "#contact_me_page"  class = "smoothscroll">
+              <p class = "reg_text content_text"> CONTACT </p>
+            </a>
+                  <!--adding dropdown menu, only visible on wide screens-->
+            <button id="nav_dropdown_icon" onclick = "dropDownNav()">
+              <div class="nav_icon_bar"></div>
+              <div class="nav_icon_bar"></div>
+              <div class="nav_icon_bar"></div>
+            </button>
+         </div>
+     </div>
+   </div>
   </div>
 
 
   <!--Title Block-->
-  <div class = "row">
-    <div class = "col-sm-3"></div>
-    <div class = "col-sm-6 title_block">
-      <p id = "my_name"> Julie Belleville </p>
-      <p class = "reg_text"> Undergraduate Engineering </p>
-      <p class = "reg_text"> UBC Student </p>
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-8 title_block">
+        <p id = "my_name"> Julie Belleville </p>
+        <p class = "reg_text beige_green"> UBC Student </p>
+        <p class = "reg_text beige_green"> Engineering Physics </p>
+      </div>
+    </div>
+  </div>
+
+<!--Fun Shakespeare Quote-->
+<div class = "container-fluid">
+    <div class = "row">
+      <div class = "col-sm-2"></div>
+      <div class = "col-sm-8">
+        <p class = "lead" id = "quote">
+          My documentation flies up, my thoughts remain below
+        </p>
+      </div>
     </div>
   </div>
 
   <!--About Me-->
-  <div class = "subtitles" id = "about_me">
-  </div> 
+  <div id = "about_me_page">
+    <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-sm-12">
+            <p class = "reg_text subtitles"> ABOUT ME </p>
+          </div>
+        </div>
+      </div>
+
+      <div id = "about_me">
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-sm-4">
+            <img id = "my_picture" src = "portrait_of_me.jpeg"/>
+          </div>
+          <div class = "col-sm-2"></div>
+          <div class = "col-sm-6">
+            <ul>
+              <li class = "reg_text bullet_point lead"> Engineering Physics Undergraduate </li>
+              <li class = "reg_text bullet_point lead"> Knows Java, C, HTML/CSS/JS, Processing </li>
+              <li class = "reg_text bullet_point lead"> Member of UBC Orbit (satellite design team)</li>
+               <li class = "reg_text bullet_point lead"> Interested in electromagnetism, algorithms, software, sustainable practices</li>
+               <li class = "reg_text bullet_point lead"> Teaches animation and programming (Blender Game, HTML/CSS/JS) at <em><a href = https://www.bytecamp.ca/ style = "color:white">Byte Camp </a></em></li>
+            </ul>          
+          </div>
+        </div>
+     </div>
+    </div> 
+  </div>
 
   <!--Project Gallery-->
-  <div class = "subtitles" id = "project_gallery"></div> 
+  <div id = "project_gallery_page">
+    <div class = "container-fluid">
+      <div class = "row"> 
+          <div class = "col-sm-12">
+            <p class = "reg_text subtitles grey_shade_text"> PROJECT GALLERY </p>
+          </div>
+        </div>
+      </div> 
+
+      <div class = "subtitles" id = "project_gallery"></div> 
+    </div>
 
   <!--Resume-->
-  <div class = "subtitles" id = "resume"></div> 
+  <div id = "resume_page">
+    <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-sm-12">
+            <p class = "reg_text subtitles"> RESUME </p>
+          </div>
+        </div>
+      </div>
+    <div class = "subtitles" id = "resume"></div> 
+  </div>
 
   <!--Contact Me-->
-  <div class = "subtitles" id = "contact_me"></div> 
-    
+  <div id = "contact_me_page">
+    <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-sm-12">
+            <p class = "reg_text subtitles grey_shade_text"> CONTACT ME! </p>
+          </div>
+        </div>
+      </div>
+    <div class = "subtitles" id = "contact_me"></div> 
+  </div>
+      
 
 
 
@@ -85,8 +190,18 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+
+    <!--default stuff from bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+   
+ <!--smooth scroll stuff-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/smooth_scroll.js"></script> 
+  <script type = "text/javascript" src = "javascript/responsive.js"></script>
+
+    
   </body>
-  </html>
+</html>

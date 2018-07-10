@@ -50,6 +50,7 @@ button
 	background:none;
 	border:none;
 }
+
 #my_name
 {
 	font-family: Trebuchet, Title Font, cursive;
@@ -100,7 +101,7 @@ button
 .content_text
 {
 	color:white;
-	text-align:right bottom;
+	text-align:center;
 	font-size:1.25em;
 
 	position:relative;
@@ -143,13 +144,15 @@ button
 	color:white;
 	line-height: 2;
 	max-width:550px;
+	margin-left:auto;
+	margin-right:auto;
 
 }
 
 #welcome_tag
 {
 	font-size:2.5em;
-	margin-top:4px;
+	margin-top:15px;
 	color:white;
 	font-family:Body Font, Calibri Light, sans-serif;
 	border:none;
@@ -163,7 +166,13 @@ button
 {
 	min-height:33%;
 	min-width:50%;
-	position:center relative;
+
+	max-width:80%;
+
+	position:center;
+
+	/*margin-left:auto;
+	margin-right:auto;*/
 
 	margin-top: 25%;
 	padding:1.5em;
@@ -215,9 +224,6 @@ button
 	font-family:Body Font, Aleo, Jura, Century Gothic, PT Sans Pro, Verdana, sans-serif;
 	margin-top:10%;
 	margin-bottom:33%;
-
-	//background-color:rgba(255, 255, 255, 0.3);
-
 }
 
 .text_centered
@@ -228,7 +234,9 @@ button
 .subtitles
 {
 	font-size:4em;
-	color:rgba(0, 26, 50, 0.7);
+	/*color:rgba(0, 26, 50, 0.7);*/
+	color: rgba(24,23,55,0.95);
+
 	font-family:Body Font, Calibri Light, Century Gothic, PT Sans Pro, Verdana, sans-serif;
 	text-align:left;
 	padding:0px;
@@ -242,7 +250,6 @@ button
 
 #contents
 {
-	//background-color:rgba(72, 93, 110, 0.98);
 	background-color: rgba(24,23,55,0.95);
 	width: 100% - 40px;
 	height:80px;
@@ -282,7 +289,6 @@ button
 
 #contents::after
 {
-	//background: linear-gradient(-105deg, black, black, #7CACCA);
 	background-color:rgba(215,201,212,0.7);
 	width: 100%;
 	height:90px;
@@ -296,9 +302,10 @@ button
 
 #about_me
 {
-	/*background-color: rgba(148, 193, 216, 0.5);
-	//background-color:rgba(0, 55, 70, 0.7);*/
-	background-color:rgba(0, 26, 50, 0.7);
+	
+	/*background-color:rgba(0, 26, 50, 0.7);*/
+	background-color: rgba(24,23,55,0.95);
+
 
 	width: 100%;
 	
@@ -308,6 +315,8 @@ button
 	bottom:0;
 
 	position:relative;
+
+	padding:45px;
 	
 }
 
@@ -320,10 +329,8 @@ button
 #my_picture
 {
 	max-height: 375px;
-	min-height:150px;
+	/*min-height:100px;*/
 	position:relative;
-	margin-top:50px;
-	margin-bottom:50px;
 	margin-left:50%;
 	border-radius:50%;
 	border:white solid 4px;
@@ -331,11 +338,11 @@ button
 }
 #project_gallery
 {
-	//background-color:rgba(0, 42, 41, 0.7);
-	background-color:rgba(0, 26, 40, 0.65);
+	/*background-color:rgba(0, 26, 40, 0.65);*/
+	background-color: rgba(24,23,55,0.95);
+
 
 	width: 100%;
-	height:600px;
 	
 	border:white solid 1px;
 	border-top:none;
@@ -352,15 +359,37 @@ button
 	display:block;
 }
 
+.project_carousel
+{
+	width:100%;
+	max-width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	display:block;	
+}
 
+.carousel_dots
+{
+	background-color: rgba(24,23,55,0.8);
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-bottom:20px;
+	padding-top:20px;
+	padding-left:25px;
+	padding-right:25px;
+
+	width:100%;
+}
 
 #resume
 {
-	//background-color:rgba(0, 67, 85, 0.75);
-	background-color:rgba(0, 26, 50, 0.7);
+	/*background-color:rgba(0, 26, 50, 0.7);*/
+	background-color: rgba(24,23,55,0.95);
+
 
 	width: 100%;
-	height:300px;
 	
 	border:white solid 1px;
 	border-top:none;
@@ -376,9 +405,27 @@ button
 	min-height:100%;
 	display:block;
 }
+
+#resume_link
+{
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+
+	display:block;
+}
+
+#resume_link:hover
+{
+	background:white;
+	color:rgba(24,23,55,0.95);
+}
+
 #contact_me
 {
-	background-color:rgba(0, 26, 40, 0.65);
+	/*background-color:rgba(0, 26, 40, 0.65);*/
+	background-color: rgba(24,23,55,0.95);
+
 
 	width: 100%;
 	min-height:400px;

@@ -16,24 +16,38 @@
 	}
 }
 
+@media (max-width:500px)
+{
+	#nav_dropdown_icon
+	{
+		right:30px;
+	}
+
+}
+
 @media (max-width:575px)
 {
-	#my_picture
-	{
-		margin-left:auto;
-		margin-right:auto;
-
-		width:304px;
-
-		display:block;
-
-		float:none;
-	}
 	.bullet_points
 	{
 		display:block;
 	}
+
+	.title_block
+	{
+		margin-left:auto;
+		margin-right:auto;
+	}
+
 }
+
+@media (max-width:615px)
+{
+	#welcome_tag
+	{
+		font-size:2em;
+	}
+}
+
 @media (max-width:770px) and (min-width:425px)
 {
 	#my_name
@@ -44,7 +58,9 @@
 	.subtitles
 	{
 		font-size:4.5rem;
+
 	}
+
 }
 
 
@@ -66,19 +82,6 @@
 	#nav_dropdown
 	{
 		display:none;
-	}
-}
-
-@media (max-width:1175px) 
-{
-	#welcome_tag
-	{
-		font-size:2.25em;
-		margin-top:15px;
-	}
-	#my_picture
-	{
-		right: 100px;
 	}
 }
 

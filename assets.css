@@ -54,11 +54,7 @@ button
 #my_name
 {
 	font-family: Trebuchet, Title Font, cursive;
-	/*//Aviano;
-	//Optima, Calibri Light, sans-serif;
-	//Caslon (title), Myriad (main)
-	//Renault Light, Apex New*/
-
+	
 	font-size:7em;
 	text-align:center;
 	line-height:1.25;
@@ -68,12 +64,9 @@ button
 
 .background
 {
-	/*background: linear-gradient(0deg, var(--lightGrey), var(--greyishPink), var(--palePink), var(--myBeige), var(--beigeGreen),var(--lightGreen), var(--turquoiseA));
-	background-image:linear-gradient(0deg, rgba(242,254,254, 0.1), #F2FEFE);
-	background-color:#F2FEFE;*/
 	background-image:linear-gradient(180deg, rgba(215,201,212,0.5), rgba(215,201,212,0.7), rgba(167,201,212, 0.8));
-		/*light green, #98E1F4);*/
 	background-repeat:no-repeat;
+
 	min-height: 100%;
 	min-width: 100%;
 	background-size: cover;
@@ -85,7 +78,6 @@ button
 
 .reg_text
 {
-	/*font-family: Century Gothic, PT Sans Pro, Verdana, sans-serif;*/
 	font-family: Body Font, Century Gothic, Verdana, sans-serif;
 	text-align:center;
 	font-size:1.75em;
@@ -116,6 +108,15 @@ button
 	overflow:hidden;
 }
 
+.contact_text
+{
+	color:white;
+	text-align:center;
+	font-size:1.5rem;
+
+	padding-top:25px;
+}
+
 .dropdown_content_text
 {
 	text-align:left;
@@ -133,7 +134,7 @@ button
 	background:white;
 	margin:15px;
 
-	margin-top:0px;
+	margin-top:22px;
 	margin-left:-15px;
 
 	display:none;
@@ -151,7 +152,7 @@ button
 
 #welcome_tag
 {
-	font-size:2.5em;
+	font-size:2.25em;
 	margin-top:15px;
 	color:white;
 	font-family:Body Font, Calibri Light, sans-serif;
@@ -159,7 +160,7 @@ button
 	background:none;
 
 	text-align:left;
-	overflow:hidden;
+	overflow:visible;
 }
 
 .title_block
@@ -169,10 +170,9 @@ button
 
 	max-width:80%;
 
-	position:center;
+	text-align:center;
 
-	/*margin-left:auto;
-	margin-right:auto;*/
+	display:block;
 
 	margin-top: 25%;
 	padding:1.5em;
@@ -218,7 +218,7 @@ button
 
 #quote
 {
-	font-size:2.25em;
+	font-size:2.5em;
 	text-align:center;
 
 	font-family:Body Font, Aleo, Jura, Century Gothic, PT Sans Pro, Verdana, sans-serif;
@@ -234,7 +234,6 @@ button
 .subtitles
 {
 	font-size:4em;
-	/*color:rgba(0, 26, 50, 0.7);*/
 	color: rgba(24,23,55,0.95);
 
 	font-family:Body Font, Calibri Light, Century Gothic, PT Sans Pro, Verdana, sans-serif;
@@ -302,9 +301,7 @@ button
 
 #about_me
 {
-	
-	/*background-color:rgba(0, 26, 50, 0.7);*/
-	background-color: rgba(24,23,55,0.95);
+		background-color: rgba(24,23,55,0.95);
 
 
 	width: 100%;
@@ -328,17 +325,18 @@ button
 
 #my_picture
 {
-	max-height: 375px;
-	/*min-height:100px;*/
-	position:relative;
-	margin-left:50%;
+	width: 250px;
+	margin-left:auto;
+	margin-right:auto;
 	border-radius:50%;
 	border:white solid 4px;
 	display:inline-block;
+
+	margin-top:50px;
+	margin-bottom:50px;
 }
 #project_gallery
 {
-	/*background-color:rgba(0, 26, 40, 0.65);*/
 	background-color: rgba(24,23,55,0.95);
 
 
@@ -385,7 +383,6 @@ button
 
 #resume
 {
-	/*background-color:rgba(0, 26, 50, 0.7);*/
 	background-color: rgba(24,23,55,0.95);
 
 
@@ -423,17 +420,18 @@ button
 
 #contact_me
 {
-	/*background-color:rgba(0, 26, 40, 0.65);*/
 	background-color: rgba(24,23,55,0.95);
 
 
 	width: 100%;
-	min-height:400px;
 	
 	border:white solid 1px;
 	border-top:none;
 
 	margin-top:0px;
+
+	padding-top:25px;
+	padding-bottom:25px;
 }
 
 #contact_me_page
@@ -442,11 +440,67 @@ button
 	display:block;
 }
 
+.contact_form_box
+{
+	background:white;
+	color:black;
+	font-size:1.5rem;
+	margin-top:20px;
+
+	width:100%;
+
+	-moz-border-radius:0.25em;
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
+}
+
+#contact_form
+{
+	font-size:2rem;
+	text-align:left;
+}
+
+input[type=submit]
+{
+	background:white;
+	font-family: Body Font, Century Gothic, Verdana, sans-serif;
+	color:rgba(24,23,55,0.95);
+
+	-moz-border-radius:0.25em;
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
+}
+
+input[type=submit]:hover
+{
+	font-weight:bold;
+}
+
+#github_mark
+{
+	display:block;
+
+	margin-left:auto;
+	margin-right:auto;
+
+	background:white;
+
+	padding:15px;
+	border-radius:50%;
+
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+#github_mark:hover
+{
+	padding:20px;
+}
+
 #title_bookmark
 {
 	display:inline;
 }
-
 
 
 html

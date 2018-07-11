@@ -33,7 +33,7 @@
   <div id = "contents">
     <div class = "container-fluid">
       <div class = "row">
-        <div class = "col-sm-4">
+        <div class = "col-xs-4">
           <!--dropdown bar stuff-->
           <a href = "#title_bookmark" class = "smoothscroll">
            <p class = "reg_text" id = "welcome_tag"> HelloWorld </p>
@@ -54,22 +54,22 @@
             </div>
         </div>
         <!--<div class = "col-sm-1"></div>-->
-          <div class = "col-sm-2">
+          <div class = "col-xs-2">
             <a href = "#about_me_page" class = "smoothscroll">
               <p class = "reg_text content_text"> ABOUT </p>
             </a>
           </div>
-          <div class = "col-sm-2">
+          <div class = "col-xs-2">
             <a href = "#project_gallery_page" class = "smoothscroll">
              <p class = "reg_text content_text"> PROJECTS </p>
            </a>
           </div>
-          <div class = "col-sm-2">
+          <div class = "col-xs-2">
             <a href = "#resume_page"  class = "smoothscroll">
               <p class = "reg_text content_text"> RESUME </p>
             </a>
           </div>
-          <div class = "col-sm-2">
+          <div class = "col-xs-2">
             <a href = "#contact_me_page"  class = "smoothscroll">
               <p class = "reg_text content_text"> CONTACT </p>
             </a>
@@ -122,10 +122,9 @@
       <div id = "about_me">
       <div class = "container-fluid">
         <div class = "row">
-          <div class = "col-sm-4">
-            <img id = "my_picture" src = "portrait_of_me.jpeg"/>
+          <div class = "col-sm-6 text-center">
+            <img id = "my_picture" src = "julie4.jpg"/>
           </div>
-          <div class = "col-sm-2"></div>
           <div class = "col-sm-6">
             <ul>
               <li class = "reg_text bullet_point lead"> Engineering Physics Undergraduate </li>
@@ -232,13 +231,39 @@
   <!--Contact Me-->
   <div id = "contact_me_page">
     <div class = "container-fluid">
+      <div class = "row">
+         <div class = "col-sm-12">
+           <p class = "reg_text subtitles"> CONTACT ME! </p>
+         </div>
+       </div>
+    </div>
+    <div class = "subtitles" id = "contact_me">
+      <div class = "container-fluid">
         <div class = "row">
-          <div class = "col-sm-12">
-            <p class = "reg_text subtitles grey_shade_text"> CONTACT ME! </p>
+          <div class = "col-sm-8">
+            <!-- contact form here -->
+            <form action = "action_page.php" method = "post" id = "contact_form">
+
+              <input type = "text" name = "name" placeholder = "Name" class = "contact_form_box"> <br>
+
+              <input type = "text" name = "contact" placeholder = "Contact Information" class = "contact_form_box"> <br>
+
+              <textarea type = "text" name = "Message" placeholder = "Message" class = "contact_form_box"> </textarea> <br> <br>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <div class = "col-sm-4">
+            <!-- contact info -->
+              <p class = "reg_text contact_text"> NUMBER:  (236) 983-3247 </p>
+              <p class = "reg_text contact_text"> EMAIL:  julie.belleville@telus.net </p>
+              <a href = "https://github.com/jbellevi" target = "_blank">
+                <img src = "GitHub-Mark-64px.png" id = "github_mark"/>
+              </a>
           </div>
         </div>
       </div>
-   <div class = "subtitles" id = "contact_me"></div>
+    </div>
   </div>
       
 

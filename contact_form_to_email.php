@@ -34,7 +34,8 @@
 	//send email
 	mail($email_to, $email_subject, $email_body, $headers);
 
-	echo "form submitted: thank you";
+	//redirect to: "form entered"
+	header('Location: submitted.html');
 
 	function IsInjected($str)
 	{

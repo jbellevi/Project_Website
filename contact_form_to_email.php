@@ -23,6 +23,7 @@
 			exit;
 	}
 
+
 	$email_from = 'juliebelleville0@gmail.com';
 	$email_subject = "Form from Personal Website";
 	$email_body = "New message from: $name. Contact info: $contact. \n Message: \n $message"
